@@ -9,8 +9,20 @@ public class Property : Tile
     public int mortgagePrice;
     public int unmortgagePrice;
     public int numHouses;
+    public int[] housePrices;
     public int[] rentPrices;
+
+    public bool isMortgaged;
+    public bool isOwned;
+
     public Player owner;
+
+    public void SetOwner(Player player)
+    {
+        owner = player;
+
+        // TODO: Add logic here if needed
+    }
 
     public int CalculateRent()
     {
@@ -25,6 +37,10 @@ public class Property : Tile
             {
                 return rentPrices[0]
             }
+        }
+        else
+        {
+            return rentPrices[numHouses];
         }
     }
     // Start is called before the first frame update
