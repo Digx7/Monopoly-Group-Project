@@ -9,13 +9,29 @@ public class Property : Tile
     public int mortgagePrice;
     public int unmortgagePrice;
     public int numHouses;
-    public int[] housePrices;
+    public int buildingPrice;
     public int[] rentPrices;
-
     public bool isMortgaged;
     public bool isOwned;
-
     public Player owner;
+
+    public void InitializeProperty(string propertyName, string propertyColorSet, int purchasePrice,
+                                   int mortgagePrice, int unmortgagePrice, int numHouses,
+                                   int buildingPrice, int[] rentPrices, bool isMortgaged,
+                                   bool isOwned, Player owner)
+    {
+        this.propertyName = propertyName;
+        this.propertyColorSet = propertyColorSet;
+        this.purchasePrice = purchasePrice;
+        this.mortgagePrice = mortgagePrice;
+        this.unmortgagePrice = unmortgagePrice;
+        this.numHouses = numHouses;
+        this.buildingPrice = buildingPrice;
+        this.rentPrices = rentPrices;
+        this.isMortgaged = isMortgaged;
+        this.isOwned = isOwned;
+        this.owner = owner;
+    }
 
     public void SetOwner(Player player)
     {
