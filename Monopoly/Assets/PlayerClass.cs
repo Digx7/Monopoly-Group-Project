@@ -18,6 +18,8 @@ public class Player : MonoBehaviour
     public Player()
     {
         // _property_list = new List<Property>();
+        // _railroad_list = new List<Railroad>();
+        // _utility_list = new List<Utility>();
         _money = 0;
         _location = 0;
         _out_of_jail_count = 0;
@@ -38,7 +40,7 @@ public class Player : MonoBehaviour
 
     public void SetLocation(int index)
     {
-        if (index >= 0 || index < 40) { _location = index; }
+        if (index >= 0 || index < 40) _location = index;
     }
 
 
