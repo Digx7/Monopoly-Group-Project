@@ -34,7 +34,6 @@ public class Property : Tile
         this.owner = owner;
     }
 
-
     public bool IsMonopoly()
     {
 
@@ -59,7 +58,7 @@ public class Property : Tile
 
     public void BuyHouse()
     {
-        if (isOwned && !isMortgaged && IsMonopoly() < 5)
+        if (isOwned && !isMortgaged && IsMonopoly() && numHouses < 5)
         {
             numHouses += 1;
             owner.ModifyMoney(-1 * buildingPrice);
@@ -67,21 +66,17 @@ public class Property : Tile
         }
     }
 
-    public void PayRent(Player[] currPlayers) 
+    public void PayRent(Player player) 
     {
         if (!isMortgaged)
         {
-            for (int i = 0; i < currPlayers.Length; i++)
-            {
-                if currPlayers[i] != owner {
-                    int rentOwed = CalculateRent();
-                    currPlayers[i].ModifyMoney(-1 * rentOwed);
-                    owner.ModifyMoney(rentOwed);
-                    // Replace Bank with whatever variable keeps track of player's bank
-                }
+            if currPlayers[i] != owner {
+                int rentOwed = CalculateRent();
+                currPlayers[i].ModifyMoney(-1 * rentOwed);
+                owner.ModifyMoney(rentOwed);
+                // Replace Bank with whatever variable keeps track of player's bank
             }
         }
-
     }
 
     public void MortgageProperty()
