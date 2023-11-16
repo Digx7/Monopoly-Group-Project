@@ -38,7 +38,7 @@ public class Player : MonoBehaviour
     public int GetLocation() { return _location; }
 
 
-    public void SetLocation(int index) { if (index >= 0 || index < 40) _location = index; }
+    public void SetLocation(int index) { if (index >= 0 && index < 40) _location = index; }
 
 
     public void ModifyLocation(int amount)
