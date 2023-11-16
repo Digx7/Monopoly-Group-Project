@@ -73,7 +73,46 @@ public class Board : MonoBehaviour
         // Special tiles
         Special Go = new Special();
         Go.InitializeSpecial("Go");
+
+        Special GoToJail = new Special();
+        GoToJail = new("GoToJail");
+
+        Special Jail = new Special();
+        Jail.InitializeSpecial("Jail");
+
+        Special Parking = new Special();
+        Parking.InitializeSpecial("Parking");
+
+        Special Update = new Special(); 
+        Update.InitializeSpecial("Update") // Pay $200
+
+        // Railraods
+        Railroad CPP = new Railroad();
+        CPP.InitializeRailroad();
+
+        // Utilities
+        Utility Surfshark = new Utility();
+        Surfshark.InitializeUtility();
+
         // TODO: Add Properties to their respective indexes within Tiles array
+
+        tiles.Insert(0, Go);
+        tiles.Insert(1, Yahoo);
+        tiles.Insert(2, Error); // Implement this
+        tiles.Insert(3, Twitch);
+        tiles.Insert(4, Update); // Implement this
+        tiles.Insert(5, CPP); // RR
+        tiles.Insert(6, Logitech);
+        tiles.Insert(7, Warning); // Implement this
+        tiles.Insert(8, Cisco);
+        tiles.Insert(9, ATT);
+        tiles.Insert(10, Jail)
+        tiles.Insert(11, Lyft);
+        tiles.Insert(12, Surfshark);
+        tiles.Insert(13, LG);
+        tiles.Insert(14, TMobile);
+        
         // TODO: Hardcode Special, Utility, and Railroad Tiles
+
     }
 }

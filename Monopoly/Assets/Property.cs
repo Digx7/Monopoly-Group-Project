@@ -51,8 +51,7 @@ public class Property : Tile
         if (!isOwned)
         {
             SetOwner(player);
-            player.Bank -= purchasePrice;
-            // Replace Bank with whatever variable keeps track of player's bank
+            player.ModifyMoney(-1 * purchasePrice);
         } 
         else:
             return "This property has already been purchased."
@@ -62,8 +61,8 @@ public class Property : Tile
     {
         if (isOwned && !isMortgaged && IsMonopoly() < 5)
         {
-            numHouses += 1
-            owner.Bank -= buildingPrice;
+            numHouses += 1;
+            owner.ModifyMoney(-1 * buildingPrice);
             // Replace Bank with whatever variable keeps track of player's bank
         }
     }
@@ -75,9 +74,9 @@ public class Property : Tile
             for (int i = 0; i < currPlayers.Length; i++)
             {
                 if currPlayers[i] != owner {
-                    int rentOwed = CalculateRent()
-                    currPlayers[i].Bank -= rentOwed;
-                    owner.Bank += rentOwed;
+                    int rentOwed = CalculateRent();
+                    currPlayers[i].ModifyMoney(-1 * rentOwed);
+                    owner.ModifyMoney(rentOwed);
                     // Replace Bank with whatever variable keeps track of player's bank
                 }
             }
@@ -87,14 +86,14 @@ public class Property : Tile
 
     public void MortgageProperty()
     {
-        owner.Bank += mortgagePrice;
+        owner.ModifyMoney(mortgagePrice);
         // Replace Bank with whatever variable keeps track of player's bank
         isMortgaged = true;
     }
 
     public void UnmortgageProperty()
     {
-        owner.Bank -= unmortgagePrice;
+        owner.ModifyMoney(-1 * unmortgagePrice); 
         // Replace Bank with whatever variable keeps track of player's bank
         isMortgaged = false;
     }
