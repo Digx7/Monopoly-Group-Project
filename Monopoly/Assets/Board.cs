@@ -90,11 +90,21 @@ public class Board : MonoBehaviour
         Railroad CPP = new Railroad();
         CPP.InitializeRailroad();
 
+        Railroad Java = new Railroad();
+        Java.InitializeRailroad();
+
+        Railroad HTML = new Railroad();
+        HTML.InitializeRailroad();
+
+        Railroad Python = new Railroad();
+        Python.InitializeRailroad();
+
         // Utilities
         Utility Surfshark = new Utility();
         Surfshark.InitializeUtility();
 
-        // TODO: Add Properties to their respective indexes within Tiles array
+        Utility NordVPN = new Utility();
+        NordVPN.InitializeUtility();
 
         tiles.Insert(0, Go);
         tiles.Insert(1, Yahoo);
@@ -111,6 +121,31 @@ public class Board : MonoBehaviour
         tiles.Insert(12, Surfshark);
         tiles.Insert(13, LG);
         tiles.Insert(14, TMobile);
+        tiles.Insert(15, Java);
+        tiles.Insert(16, AMD);
+        tiles.Insert(17, Error);
+        tiles.Insert(18, StackOverflow);
+        tiles.Insert(19, Reddit);
+        tiles.Insert(20, Parking);
+        tiles.Insert(21, CDProjectRed);
+        tiles.Insert(22, Warning);
+        tiles.Insert(23, RiotGames);
+        tiles.Insert(24, ElectronicArts);
+        tiles.Insert(25, HTML);
+        tiles.Insert(26, BestBuy);
+        tiles.Insert(27, Sprint);
+        tiles.Insert(28, NordVPN);
+        tiles.Insert(29, WesternUnion);
+        tiles.Insert(30, GoToJail);
+        tiles.Insert(31, Razer);
+        tiles.Insert(32, Nvidia);
+        tiles.Insert(33, Error);
+        tiles.Insert(34, Spotify);
+        tiles.Insert(35, Python);
+        tiles.Insert(36, Warning);
+        tiles.Insert(37, Intel);
+        tiles.Insert(38, Crash);
+        tiles.Insert(39, HP);
         
         // TODO: Hardcode Special, Utility, and Railroad Tiles
 
