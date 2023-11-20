@@ -1,15 +1,18 @@
+using System;
+using System.Collections;
 using UnityEngine;
 
 public class Railroad : Tile
 {
-    private bool hasCard1 = false; 
-    private bool hasCard2 = false; 
-    private bool hasCard3 = false; 
+    private bool hasCard1 = false;
+    private bool hasCard2 = false;
+    private bool hasCard3 = false;
     private bool hasCard4 = false;
+
+    public string railroadName { get; set; }
+
     //UNCOMMENT WHEN MERGED
     //private int RailroadPrice = GetTileCost();
-
-
 
     public void SetCard1(bool card)
     {
@@ -34,11 +37,11 @@ public class Railroad : Tile
     public int GetRent()
     {
         int multiplier = 0;
-        if(hasCard1)
+        if (hasCard1)
         {
             multiplier++;
         }
-        if(hasCard2)
+        if (hasCard2)
         {
             multiplier++;
         }
@@ -51,7 +54,7 @@ public class Railroad : Tile
             multiplier++;
         }
         return 0;
-            //RailroadPrice * multiplier;
-            //UNCOMMENT THIS WHEN MERGED
+        //RailroadPrice * multiplier;
+        //UNCOMMENT THIS WHEN MERGED
     }
 }

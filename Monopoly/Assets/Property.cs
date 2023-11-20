@@ -1,8 +1,9 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Experimental.Rendering;
 
 public class Property : Tile
-{ 
+{
     public string propertyName;
     public string propertyColorSet;
     public int purchasePrice;
@@ -14,7 +15,6 @@ public class Property : Tile
     public bool isMortgaged;
     public bool isOwned;
     public Player owner;
-    public Player[] currPlayers;
 
     public void InitializeProperty(string propertyName, string propertyColorSet, int purchasePrice,
                                    int mortgagePrice, int unmortgagePrice, int numHouses,
@@ -34,12 +34,6 @@ public class Property : Tile
         this.owner = owner;
     }
 
-
-    public bool IsMonopoly()
-    {
-
-    }
-
     public void SetOwner(Player player)
     {
         owner = player;
@@ -51,51 +45,41 @@ public class Property : Tile
         if (!isOwned)
         {
             SetOwner(player);
-            player.Bank -= purchasePrice;
-            // Replace Bank with whatever variable keeps track of player's bank
-        } 
-        else:
-            return "This property has already been purchased."
+            player.ModifyMoney(-1 * purchasePrice);
+        }
     }
 
     public void BuyHouse()
     {
-        if (isOwned && !isMortgaged && IsMonopoly() < 5)
+        if (isOwned && !isMortgaged && IsMonopoly() && numHouses < 5)
         {
-            numHouses += 1
-            owner.Bank -= buildingPrice;
-            // Replace Bank with whatever variable keeps track of player's bank
+            numHouses += 1;
+            owner.ModifyMoney(-1 * buildingPrice);
         }
     }
 
-    public void PayRent(Player[] currPlayers) 
+    public void PayRent(Player player)
     {
         if (!isMortgaged)
         {
-            for (int i = 0; i < currPlayers.Length; i++)
+            if (player != owner)
             {
-                if currPlayers[i] != owner {
-                    int rentOwed = CalculateRent()
-                    currPlayers[i].Bank -= rentOwed;
-                    owner.Bank += rentOwed;
-                    // Replace Bank with whatever variable keeps track of player's bank
-                }
+                int rentOwed = CalculateRent();
+                player.ModifyMoney(-1 * rentOwed);
+                owner.ModifyMoney(rentOwed);
             }
         }
-
     }
 
     public void MortgageProperty()
     {
-        owner.Bank += mortgagePrice;
-        // Replace Bank with whatever variable keeps track of player's bank
+        owner.ModifyMoney(mortgagePrice);
         isMortgaged = true;
     }
 
     public void UnmortgageProperty()
     {
-        owner.Bank -= unmortgagePrice;
-        // Replace Bank with whatever variable keeps track of player's bank
+        owner.ModifyMoney(-1 * unmortgagePrice);
         isMortgaged = false;
     }
 
@@ -105,12 +89,13 @@ public class Property : Tile
         // If so, double the base rent. If not, return base rent
         if (numHouses == 0)
         {
-            if IsMonopoly() {
+            if (IsMonopoly())
+            {
                 return rentPrices[1];
             }
             else
             {
-                return rentPrices[0]
+                return rentPrices[0];
             }
         }
         else

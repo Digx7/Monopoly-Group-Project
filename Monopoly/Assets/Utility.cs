@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Utility : Tile
@@ -8,7 +10,9 @@ public class Utility : Tile
     //UNCOMMENT WHEN MERGED
     //private int UtilityCost = GetTileCost();
 
-    public void SetCard1(bool card) 
+    public string utilityName { get; set; }
+
+    public void SetCard1(bool card)
     {
         hasCard1 = card;
     }
