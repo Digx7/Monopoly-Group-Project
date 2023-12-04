@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class CardTile : Tile
 {
-    
+    public WarningOrError drawCardType;
 }

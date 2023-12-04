@@ -2594,6 +2594,7 @@ GameObject:
   - component: {fileID: 487870550}
   - component: {fileID: 487870551}
   - component: {fileID: 487870552}
+  - component: {fileID: 487870553}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -2652,7 +2653,9 @@ Transform:
   m_LocalPosition: {x: -0.9499998, y: -0.005782485, z: -16.73}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 631488671}
+  - {fileID: 1606939197}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &487870550
@@ -2752,6 +2755,20 @@ MonoBehaviour:
   player3: {r: 0.018987417, g: 1, b: 0, a: 0.9019608}
   player4: {r: 0.9888284, g: 1, b: 0, a: 0.9019608}
   UIPanels: {r: 0, g: 0, b: 0, a: 0.9019608}
+--- !u!114 &487870553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487870547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea54b307ceeef684798853fd3ceb8188, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warningDeck: {fileID: 631488670}
+  errorDeck: {fileID: 1606939196}
 --- !u!1001 &504173158
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3675,6 +3692,60 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!1 &631488669
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 631488671}
+  - component: {fileID: 631488670}
+  m_Layer: 0
+  m_Name: WarningDeck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &631488670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631488669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e7cca551146661488d7efa9b694e9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cards:
+  - cardSprite: {fileID: -223047662, guid: c7c89532ee93b624b89a9dae19bd33a7, type: 3}
+    cardType: 1
+    amount: 150
+  - cardSprite: {fileID: -1758616041, guid: c7c89532ee93b624b89a9dae19bd33a7, type: 3}
+    cardType: 1
+    amount: 50
+  - cardSprite: {fileID: -1778496110, guid: c7c89532ee93b624b89a9dae19bd33a7, type: 3}
+    cardType: 0
+    amount: 15
+--- !u!4 &631488671
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631488669}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 487870549}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &681177324
 GameObject:
   m_ObjectHideFlags: 0
@@ -6541,6 +6612,7 @@ MonoBehaviour:
   buyScreenPrefab: {fileID: 7785497816859744048, guid: 32109f80382b80c418be2278f6557b6e, type: 3}
   payScreenPrefab: {fileID: 8338890510760041469, guid: 9851ed04ffe212e44b3872025384cdaa, type: 3}
   messageScreenPrefab: {fileID: 6150503442970141369, guid: c2dd4ce77a651d0429f9d53e89eecfd1, type: 3}
+  cardScreenPrefab: {fileID: 644837659560384013, guid: 383d8573397de5f49a7153ad820840cc, type: 3}
 --- !u!1001 &1170323673
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8672,6 +8744,84 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 591683274566058419, guid: 2f6e3042db7606845a77e0cd0cff1a3e, type: 3}
   m_PrefabInstance: {fileID: 1592754337}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1606939195
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1606939197}
+  - component: {fileID: 1606939196}
+  m_Layer: 0
+  m_Name: ErrorDeck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1606939196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606939195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e7cca551146661488d7efa9b694e9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cards:
+  - cardSprite: {fileID: -664200562, guid: f9a18c1c8fa65604597941f343d05e96, type: 3}
+    cardType: 1
+    amount: 200
+  - cardSprite: {fileID: -942323077, guid: f9a18c1c8fa65604597941f343d05e96, type: 3}
+    cardType: 1
+    amount: 100
+  - cardSprite: {fileID: -35101631, guid: f9a18c1c8fa65604597941f343d05e96, type: 3}
+    cardType: 1
+    amount: 100
+  - cardSprite: {fileID: -1812457047, guid: f9a18c1c8fa65604597941f343d05e96, type: 3}
+    cardType: 1
+    amount: 100
+  - cardSprite: {fileID: 1687615397, guid: f9a18c1c8fa65604597941f343d05e96, type: 3}
+    cardType: 1
+    amount: 50
+  - cardSprite: {fileID: -2024767080, guid: f9a18c1c8fa65604597941f343d05e96, type: 3}
+    cardType: 1
+    amount: 25
+  - cardSprite: {fileID: -1739554116, guid: f9a18c1c8fa65604597941f343d05e96, type: 3}
+    cardType: 1
+    amount: 20
+  - cardSprite: {fileID: -833367803, guid: f9a18c1c8fa65604597941f343d05e96, type: 3}
+    cardType: 1
+    amount: 10
+  - cardSprite: {fileID: 1981241936, guid: f9a18c1c8fa65604597941f343d05e96, type: 3}
+    cardType: 0
+    amount: 100
+  - cardSprite: {fileID: 585015351, guid: f9a18c1c8fa65604597941f343d05e96, type: 3}
+    cardType: 0
+    amount: 50
+  - cardSprite: {fileID: -358585530, guid: f9a18c1c8fa65604597941f343d05e96, type: 3}
+    cardType: 0
+    amount: 50
+--- !u!4 &1606939197
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606939195}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 487870549}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1652116801
 PrefabInstance:
   m_ObjectHideFlags: 0

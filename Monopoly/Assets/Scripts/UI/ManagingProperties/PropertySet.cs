@@ -14,14 +14,15 @@ public class PropertySet : MonoBehaviour
     public PropertyColorSet propertyColorSet;
     public GameObject propertyCardPrefab;
     public GameObject propertyCardPrefabParent;
-    public UnityEvent OnBuyComputer;
-    public UnityEvent OnSellComputer;
+    public UnityEvent<PropertyColorSet> OnBuyComputer;
+    public UnityEvent<PropertyColorSet> OnSellComputer;
     public UnityEvent<Tile> OnMortgage;
     public UnityEvent<Tile> OnUnMortgage;
 
     private PlayerManager playerManager;
     private GlobalColorLUT globalColorLUT;
     private PropertyColor propertyColor;
+    private PropertyColorSet bufferedPropertyColorSet;
 
     private void Awake()
     {
@@ -50,6 +51,19 @@ public class PropertySet : MonoBehaviour
             buyComputerButton.interactable = false;
             sellComputerButton.interactable = false;
         }
+        else if(propertyColorSet.totalHouses == 0)
+        {
+            sellComputerButton.interactable = false;
+        }
+        else if(propertyColorSet.MaxPossibleHousesReached())
+        {
+            buyComputerButton.interactable = false;
+        }
+
+        buyComputerButton.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().text = "Buy Computer (-$" + propertyColorSet.computerCost +")";
+        sellComputerButton.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().text = "Sell Computer (+$" + propertyColorSet.computerCost +")";
+
+        bufferedPropertyColorSet = propertyColorSet;
     }
 
     public void Setup(List<Railroad> railroads)
@@ -100,11 +114,11 @@ public class PropertySet : MonoBehaviour
 
     public void OnClickBuyComputer()
     {
-        OnBuyComputer.Invoke();
+        OnBuyComputer.Invoke(bufferedPropertyColorSet);
     }
 
     public void OnClidkSellComputer()
     {
-        OnSellComputer.Invoke();
+        OnSellComputer.Invoke(bufferedPropertyColorSet);
     }
 }

@@ -2952,7 +2952,7 @@ PrefabInstance:
       objectReference: {fileID: -633236081, guid: 1256d559c8745ec4ab0f6bd769cfc4ef, type: 3}
     - target: {fileID: 7180128507195475925, guid: 6be2f23a13544554e8c58b6a214c2abf, type: 3}
       propertyPath: mortgagePrice
-      value: 7
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 7180128507195475925, guid: 6be2f23a13544554e8c58b6a214c2abf, type: 3}
       propertyPath: unmortgagePrice

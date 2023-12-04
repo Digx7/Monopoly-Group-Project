@@ -7,6 +7,14 @@ public class GlobalStructs : MonoBehaviour
 }
 
 [System.Serializable]
+public struct Card
+{
+    public Sprite cardSprite;
+    public WarningAndErrorCardTypes cardType;
+    public int amount;
+}
+
+[System.Serializable]
 public struct BoardMove
 {
     public int playerID;

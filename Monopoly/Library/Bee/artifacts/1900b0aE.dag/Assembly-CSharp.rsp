@@ -373,6 +373,7 @@
 "Assets/Scripts/GlobalS/GlobalStructs.cs"
 "Assets/Scripts/Helpers/DestroyOnStart.cs"
 "Assets/Scripts/Jail.cs"
+"Assets/Scripts/Managers/DeckManagers.cs"
 "Assets/Scripts/Managers/GameManager.cs"
 "Assets/Scripts/Managers/InputManager.cs"
 "Assets/Scripts/Managers/PlayerManager.cs"
@@ -387,6 +388,7 @@
 "Assets/Scripts/Special.cs"
 "Assets/Scripts/Tile.cs"
 "Assets/Scripts/UI/BuyScreen.cs"
+"Assets/Scripts/UI/CardScreen.cs"
 "Assets/Scripts/UI/DiceRollerUI.cs"
 "Assets/Scripts/UI/GameRun.cs"
 "Assets/Scripts/UI/Helpers/ActionsUIManager.cs"
@@ -406,6 +408,8 @@
 "Assets/Scripts/UI/SetTurnOrder.cs"
 "Assets/Scripts/UI/StartScreen.cs"
 "Assets/Scripts/Utility.cs"
+"Assets/Scripts/WarningAndErrorCards/Deck.cs"
+"Assets/Scripts/WarningAndErrorCards/WarningAndErrorCard.cs"
 -langversion:9.0
 
 /deterministic

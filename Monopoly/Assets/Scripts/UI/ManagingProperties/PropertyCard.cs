@@ -7,6 +7,8 @@ using TMPro;
 
 public class PropertyCard : MonoBehaviour
 {
+    public Image serverCountImage;
+    public List<Sprite> serverCountImages;
     public Image cardImage;
     public Button button;
     public TextMeshProUGUI buttonPrompt;
@@ -35,6 +37,19 @@ public class PropertyCard : MonoBehaviour
             cardImage.sprite = tile.frontSprite;
             buttonPrompt.text = "Mortgage (+$" + tile.mortgagePrice + ")";
         }
+
+        if(tile is Property)
+        {
+            SetUpServerIcon( (Property)tile );
+        }
+    }
+
+    private void SetUpServerIcon(Property property)
+    {
+        if(property.numHouses == 0) return;
+
+        serverCountImage.gameObject.SetActive(true);
+        serverCountImage.sprite = serverCountImages[property.numHouses - 1];
     }
 
     public void OnClickButton()

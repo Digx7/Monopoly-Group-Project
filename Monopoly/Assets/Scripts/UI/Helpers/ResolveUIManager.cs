@@ -11,8 +11,10 @@ public class ResolveUIManager : MonoBehaviour
     public GameObject buyScreenPrefab;
     public GameObject payScreenPrefab;
     public GameObject messageScreenPrefab;
+    public GameObject cardScreenPrefab;
 
     private PlayerManager playerManager;
+    private DeckManagers deckManager;
 
     private Tile bufferedTile;
 
@@ -21,6 +23,7 @@ public class ResolveUIManager : MonoBehaviour
         turnManager = FindObjectOfType<TurnManager>();
         board = FindObjectOfType<Board>();
         playerManager = FindObjectOfType<PlayerManager>();
+        deckManager = FindObjectOfType<DeckManagers>();
     }
 
     private void OnEnable()
@@ -131,6 +134,7 @@ public class ResolveUIManager : MonoBehaviour
 
             buyScreen.Setup(tile, turnManager.CurrentPlayerIndex());
             buyScreen.OnSuccess.AddListener(OnBuy);
+            buyScreen.OnFail.AddListener(EndResolve);
         }
     }
 
@@ -150,13 +154,22 @@ public class ResolveUIManager : MonoBehaviour
 
     private void ResolveCardTile(CardTile cardTile)
     {
-        Debug.Log("tile " + cardTile.name + " is a card tile and not implemented yet :(");
-        GameObject uiObject = Instantiate(messageScreenPrefab, transform);
-        MessageScreen messageScreen = uiObject.GetComponent<MessageScreen>();
+        // Debug.Log("tile " + cardTile.name + " is a card tile and not implemented yet :(");
+        // GameObject uiObject = Instantiate(messageScreenPrefab, transform);
+        // MessageScreen messageScreen = uiObject.GetComponent<MessageScreen>();
 
-        string message = "" + cardTile.name + " is a card tile and not implemented yet :(";
-        messageScreen.Setup(message);
-        messageScreen.OnContinue.AddListener(EndResolve);
+        // string message = "" + cardTile.name + " is a card tile and not implemented yet :(";
+        // messageScreen.Setup(message);
+        // messageScreen.OnContinue.AddListener(EndResolve);
+
+        Card card = deckManager.DrawCard(cardTile.drawCardType);
+
+        GameObject uiObject = Instantiate(cardScreenPrefab, transform);
+        CardScreen cardScreen = uiObject.GetComponent<CardScreen>();
+
+        cardScreen.Setup(card);
+        cardScreen.OnSuccess.AddListener(EndResolve);
+        cardScreen.OnFail.AddListener(OnDeclareBankrupt);
     }
 
     private void ResolveMessageTile(MessageTile messageTile)

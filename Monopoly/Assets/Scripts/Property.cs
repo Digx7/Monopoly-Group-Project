@@ -4,8 +4,8 @@ using System.Collections.Generic;
 public class Property : Tile
 {
     public PropertyColor propertyColorSet;
-    public int numHouses;
-    public int buildingPrice;
+    public int numHouses = 0;
+    // public int buildingPrice;
     // public int[] rentPrices;
     public PropertyRentPrices propertyRentPrices;
     
@@ -38,6 +38,13 @@ public class Property : Tile
         // }
 
         numHouses++;
+        // Debug.Log("" + name + "'s BuyHouse() increased numHouses to " + numHouses);
+    }
+
+    public void SellHouse()
+    {
+        numHouses--;
+        // Debug.Log("" + name + "'s SellHouse() decreased numHouses to " + numHouses);
     }
 
     public override int CalculateRent()

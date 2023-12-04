@@ -17,6 +17,7 @@ public class ManageProperties : MonoBehaviour
     private TurnManager turnManager;
 
     private Tile bufferedTile;
+    private PropertyColorSet bufferedPropertyColorSet;
 
     private void Awake()
     {
@@ -48,6 +49,8 @@ public class ManageProperties : MonoBehaviour
             PropertySet propertySet = obj.GetComponent<PropertySet>();
 
             propertySet.Setup(propertyColorSet);
+            propertySet.OnBuyComputer.AddListener(OnBuyComputer);
+            propertySet.OnSellComputer.AddListener(OnSellComputer);
             propertySet.OnMortgage.AddListener(OnMortgage);
             propertySet.OnUnMortgage.AddListener(OnUnMortgage);
         }
@@ -85,6 +88,36 @@ public class ManageProperties : MonoBehaviour
         root.SetActive(false);
     }
 
+    private void OnBuyComputer(PropertyColorSet propertyColorSet)
+    {
+        Wipe();
+
+        GameObject uiObject = Instantiate(payScreenPrefab, transform);
+        PayScreenUI payScreenUI = uiObject.GetComponent<PayScreenUI>();
+
+        string successMessage = "You paid $" + propertyColorSet.computerCost + " to buy a computer";
+        string failedMessage = "You cant afford $" + propertyColorSet.computerCost + " to buy a computer";
+        payScreenUI.Setup(successMessage, failedMessage, turnManager.CurrentPlayerIndex(), propertyColorSet.computerCost, false);
+        payScreenUI.OnSuccess.AddListener(OnPayForComputer);
+        payScreenUI.OnFail.AddListener(Render);
+
+        bufferedPropertyColorSet = propertyColorSet;
+    }
+
+    private void OnSellComputer(PropertyColorSet propertyColorSet)
+    {
+        Wipe();
+
+        GameObject uiObject = Instantiate(recieveScreenPrefab, transform);
+        RecieveScreen recieveScreen = uiObject.GetComponent<RecieveScreen>();
+
+        string message = "You recieved $" + propertyColorSet.computerCost + " to for selling a computer";
+        recieveScreen.Setup(message, turnManager.CurrentPlayerIndex(), propertyColorSet.computerCost);
+        recieveScreen.OnContinue.AddListener(OnSellComputer);
+
+        bufferedPropertyColorSet = propertyColorSet;
+    }
+
     private void OnMortgage(Tile tile)
     {
         Wipe();
@@ -113,6 +146,18 @@ public class ManageProperties : MonoBehaviour
         payScreenUI.OnFail.AddListener(Render);
 
         bufferedTile = tile;
+    }
+
+    private void OnPayForComputer()
+    {
+        bufferedPropertyColorSet.BuyComputer();
+        Render();
+    }
+
+    private void OnSellComputer()
+    {
+        bufferedPropertyColorSet.SellComputer();
+        Render();
     }
 
     private void OnPayMortgage()

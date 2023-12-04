@@ -13,3 +13,8 @@ public enum TurnState {TurnStart, Actions_1, Roll, Move, Resolve, Actions_2, Tur
 public enum PropertyColor {Purple, LightBlue, Pink, Orange, Red, Yellow, Green, DarkBlue};
 
 public enum ResolveState {Begin, Property_Utility_or_RailRoad, Card, Fine, Reward, GoToJail, Nothing, End}
+
+[System.Serializable]
+public enum WarningAndErrorCardTypes {Pay, Collect, Move}
+
+public enum WarningOrError {Warning, Error}
