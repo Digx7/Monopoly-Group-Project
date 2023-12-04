@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: 1256d559c8745ec4ab0f6bd769cfc4ef
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Monopoly_Company Deeds_Front_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1066
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e31995ef6f7e01f4d884107302dcb419
+      internalID: 32527833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Company Deeds_Front_1
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 1066
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1c23d716a3b1214eb5754a8e0baf40c
+      internalID: -763813497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Company Deeds_Front_2
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 1066
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12f0c3711482b684db648b7a8c88f302
+      internalID: 1424118405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Company Deeds_Front_3
+      rect:
+        serializedVersion: 2
+        x: 2124
+        y: 1066
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6045aebf2e1058644b4965c2b7a7014e
+      internalID: 670149651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Company Deeds_Front_4
+      rect:
+        serializedVersion: 2
+        x: 2832
+        y: 1066
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88365a85b0e9da04fa2ec47959aa4f4a
+      internalID: 965632797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Company Deeds_Front_5
+      rect:
+        serializedVersion: 2
+        x: 3540
+        y: 1066
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35a57c9af109e23408c239ee8d7a35e1
+      internalID: -805064272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Company Deeds_Front_6
+      rect:
+        serializedVersion: 2
+        x: 4248
+        y: 1066
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 606775ed8a5aa9d4c87260ab53c88859
+      internalID: -633236081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Company Deeds_Front_7
+      rect:
+        serializedVersion: 2
+        x: 4956
+        y: 1066
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a6a1fbdd522e514e8cc2c6b163090fe
+      internalID: 1548707451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Company Deeds_Front_8
+      rect:
+        serializedVersion: 2
+        x: 5664
+        y: 1066
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 338326c970aaf6d42a02eeb95a0211de
+      internalID: -161301137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Company Deeds_Front_9
+      rect:
+        serializedVersion: 2
+        x: 6372
+        y: 1066
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cf0dfa1160638a43b972647cafb8c87
+      internalID: -659086091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Company Deeds_Front_10
+      rect:
+        serializedVersion: 2
+        x: 7080
+        y: 1066
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0530f13a340c8a4c82b60f953749385
+      internalID: -171132406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Company Deeds_Front_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d0188b203bc89145842036fa9fc80df
+      internalID: 165264968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Company Deeds_Front_12
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 6
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51d6c02de7b5a6c4888cfed7a5950bec
+      internalID: -1289945099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Company Deeds_Front_13
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 6
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96163dbf66f98dd44842c2f614050b84
+      internalID: 79608374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Company Deeds_Front_14
+      rect:
+        serializedVersion: 2
+        x: 2124
+        y: 6
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb87adbdd9eb8e34ba1734013af57bb5
+      internalID: -1341538083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Company Deeds_Front_15
+      rect:
+        serializedVersion: 2
+        x: 2832
+        y: 6
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aef174e4380986d4ca2016a9f52951b7
+      internalID: 110802450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Company Deeds_Front_16
+      rect:
+        serializedVersion: 2
+        x: 3540
+        y: 6
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52f293a31f6e29e4395cd31e350b67ba
+      internalID: -927284684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Company Deeds_Front_17
+      rect:
+        serializedVersion: 2
+        x: 4248
+        y: 6
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac694ccd064c1b843857af62e5228a32
+      internalID: 1618459707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Company Deeds_Front_18
+      rect:
+        serializedVersion: 2
+        x: 4956
+        y: 6
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1caa3091a8972b741b7cf935b06e3ad0
+      internalID: -1668337111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Company Deeds_Front_19
+      rect:
+        serializedVersion: 2
+        x: 5664
+        y: 6
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0819fd0524256d64cba78c9b5e4031f3
+      internalID: -1523609141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Company Deeds_Front_20
+      rect:
+        serializedVersion: 2
+        x: 6372
+        y: 6
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5f4c9e0d41cb0644827c559f29e7111
+      internalID: 483800516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monopoly_Company Deeds_Front_21
+      rect:
+        serializedVersion: 2
+        x: 7080
+        y: 6
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 917a99cfbbf392a4398ce1045397c5d8
+      internalID: 356512196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Monopoly_Company Deeds_Front_0: 32527833
+      Monopoly_Company Deeds_Front_1: -763813497
+      Monopoly_Company Deeds_Front_10: -171132406
+      Monopoly_Company Deeds_Front_11: 165264968
+      Monopoly_Company Deeds_Front_12: -1289945099
+      Monopoly_Company Deeds_Front_13: 79608374
+      Monopoly_Company Deeds_Front_14: -1341538083
+      Monopoly_Company Deeds_Front_15: 110802450
+      Monopoly_Company Deeds_Front_16: -927284684
+      Monopoly_Company Deeds_Front_17: 1618459707
+      Monopoly_Company Deeds_Front_18: -1668337111
+      Monopoly_Company Deeds_Front_19: -1523609141
+      Monopoly_Company Deeds_Front_2: 1424118405
+      Monopoly_Company Deeds_Front_20: 483800516
+      Monopoly_Company Deeds_Front_21: 356512196
+      Monopoly_Company Deeds_Front_3: 670149651
+      Monopoly_Company Deeds_Front_4: 965632797
+      Monopoly_Company Deeds_Front_5: -805064272
+      Monopoly_Company Deeds_Front_6: -633236081
+      Monopoly_Company Deeds_Front_7: 1548707451
+      Monopoly_Company Deeds_Front_8: -161301137
+      Monopoly_Company Deeds_Front_9: -659086091
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

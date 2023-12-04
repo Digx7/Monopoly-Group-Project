@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: 521b82643aa69b841b1dca0947f4afcb
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Monoply_Company Deeds_Back_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1066
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3a8a87881eef0f47ab4c2c6a764b280
+      internalID: -155566725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monoply_Company Deeds_Back_1
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 1066
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 739a71e9ceccde947b0db07b3c89567f
+      internalID: 1522273567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monoply_Company Deeds_Back_2
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 1066
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d21654ba8d1c23149a4068ca8ab7f17c
+      internalID: -10972980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monoply_Company Deeds_Back_3
+      rect:
+        serializedVersion: 2
+        x: 2124
+        y: 1066
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03d038fa209a5fb418d507823e38e69c
+      internalID: 438404268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monoply_Company Deeds_Back_4
+      rect:
+        serializedVersion: 2
+        x: 2832
+        y: 1066
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a4002686bd4f314692f23969a692cb0
+      internalID: 169775553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monoply_Company Deeds_Back_5
+      rect:
+        serializedVersion: 2
+        x: 3540
+        y: 1066
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 356f597443e7c434fa2d8a5df7555ade
+      internalID: -1958329705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monoply_Company Deeds_Back_6
+      rect:
+        serializedVersion: 2
+        x: 4248
+        y: 1066
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b61e253158e04b94a91a1427562ac9f3
+      internalID: 476700669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monoply_Company Deeds_Back_7
+      rect:
+        serializedVersion: 2
+        x: 4956
+        y: 1066
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 538b10ba89774ae40a736dfc2174ee07
+      internalID: -1516419165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monoply_Company Deeds_Back_8
+      rect:
+        serializedVersion: 2
+        x: 5664
+        y: 1066
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01d8be56c66237041bcedb44d032062b
+      internalID: 1103645588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monoply_Company Deeds_Back_9
+      rect:
+        serializedVersion: 2
+        x: 6372
+        y: 1066
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cf14aa89d3a7b9429ea2084c6b2d7c8
+      internalID: -962902385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monoply_Company Deeds_Back_10
+      rect:
+        serializedVersion: 2
+        x: 7080
+        y: 1066
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 264a275b3c0945b43bebc37fb9e5bad4
+      internalID: -694600123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monoply_Company Deeds_Back_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af6fe75d315c33b4b89b177d353a3dee
+      internalID: 1470553533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monoply_Company Deeds_Back_12
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 6
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3c0eda425d89304683cbc261d79d28c
+      internalID: 2019733439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monoply_Company Deeds_Back_13
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 6
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eb55e57369e39c4ab4d659a80b40264
+      internalID: -1468193944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monoply_Company Deeds_Back_14
+      rect:
+        serializedVersion: 2
+        x: 2124
+        y: 6
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6f03328ea2f7e148907408bd18f270b
+      internalID: -2020357734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monoply_Company Deeds_Back_15
+      rect:
+        serializedVersion: 2
+        x: 2832
+        y: 6
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 863f6cb33a36b0e4fa510af3b80a933b
+      internalID: 1022644043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monoply_Company Deeds_Back_16
+      rect:
+        serializedVersion: 2
+        x: 3540
+        y: 6
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c382bb0e112d446b58dc74c68bb42a
+      internalID: 1440885017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monoply_Company Deeds_Back_17
+      rect:
+        serializedVersion: 2
+        x: 4248
+        y: 6
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdb0d8a987178514db98e9e614b1688f
+      internalID: -2063333233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monoply_Company Deeds_Back_18
+      rect:
+        serializedVersion: 2
+        x: 4956
+        y: 6
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3da259e7eba88ad4cb4db06033805059
+      internalID: -258379130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monoply_Company Deeds_Back_19
+      rect:
+        serializedVersion: 2
+        x: 5664
+        y: 6
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53fece0fcae5f0447aff619da228f7fb
+      internalID: -2051370132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monoply_Company Deeds_Back_20
+      rect:
+        serializedVersion: 2
+        x: 6372
+        y: 6
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36ac1711e5145704d8a2c01be85dabd8
+      internalID: 1322361318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monoply_Company Deeds_Back_21
+      rect:
+        serializedVersion: 2
+        x: 7080
+        y: 6
+        width: 708
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dc9422c434109b409767d66abdad421
+      internalID: 1142431985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Monoply_Company Deeds_Back_0: -155566725
+      Monoply_Company Deeds_Back_1: 1522273567
+      Monoply_Company Deeds_Back_10: -694600123
+      Monoply_Company Deeds_Back_11: 1470553533
+      Monoply_Company Deeds_Back_12: 2019733439
+      Monoply_Company Deeds_Back_13: -1468193944
+      Monoply_Company Deeds_Back_14: -2020357734
+      Monoply_Company Deeds_Back_15: 1022644043
+      Monoply_Company Deeds_Back_16: 1440885017
+      Monoply_Company Deeds_Back_17: -2063333233
+      Monoply_Company Deeds_Back_18: -258379130
+      Monoply_Company Deeds_Back_19: -2051370132
+      Monoply_Company Deeds_Back_2: -10972980
+      Monoply_Company Deeds_Back_20: 1322361318
+      Monoply_Company Deeds_Back_21: 1142431985
+      Monoply_Company Deeds_Back_3: 438404268
+      Monoply_Company Deeds_Back_4: 169775553
+      Monoply_Company Deeds_Back_5: -1958329705
+      Monoply_Company Deeds_Back_6: 476700669
+      Monoply_Company Deeds_Back_7: -1516419165
+      Monoply_Company Deeds_Back_8: 1103645588
+      Monoply_Company Deeds_Back_9: -962902385
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
