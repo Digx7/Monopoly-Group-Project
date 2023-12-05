@@ -1,16 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerManager : MonoBehaviour
 {
     public List<Player> players;
 
     private Board board;
+    private GameManager gameManager;
+    private TurnManager turnManager;
+
+    public UnityEvent<int,int> OnPlayerMoneyChange;
 
     public void Awake()
     {
         board = FindObjectOfType<Board>();
+        gameManager = FindObjectOfType<GameManager>();
+        turnManager = FindObjectOfType<TurnManager>();
     }
 
     public void AddPlayer(PlayerStartData newData)
@@ -48,11 +55,13 @@ public class PlayerManager : MonoBehaviour
     public void ChargePlayer(int playerID, int amount)
     {
         players[playerID].money -= amount;
+        OnPlayerMoneyChange.Invoke(playerID, players[playerID].money);
     }
 
     public void PayPlayer(int playerID, int amount)
     {
         players[playerID].money += amount;
+        OnPlayerMoneyChange.Invoke(playerID, players[playerID].money);
     }
 
     public void GivePlayerProperty(int playerID, Property property)
@@ -96,5 +105,12 @@ public class PlayerManager : MonoBehaviour
         if(!players[playerID].utilityList.Contains(utility)) return;
 
         players[playerID].utilityList.Remove(utility);
+    }
+
+    public void BankruptPlayer(int playerID)
+    {
+        players[playerID].isBankrupt = true;
+        turnManager.OnPlayerLose(playerID);
+        gameManager.OnPlayerLose(playerID);
     }
 }

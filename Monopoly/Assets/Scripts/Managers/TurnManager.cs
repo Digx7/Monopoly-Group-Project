@@ -24,6 +24,7 @@ public class TurnManager : MonoBehaviour
     public UnityEvent OnTurnEnd;
 
     private int[] turnOrder;
+    public int[] GetTurnOrder(){return turnOrder;}
     private int currentTurn = 0;
 
     public int CurrentPlayerNumber()
@@ -34,6 +35,25 @@ public class TurnManager : MonoBehaviour
     public int CurrentPlayerIndex()
     {
         return turnOrder[currentTurn];
+    }
+
+    public void OnPlayerLose(int playerID)
+    {
+        // remove player from turn order
+
+        // first find the index in turnOrder with playerID, which is currentTurn;
+        turnOrder[currentTurn] = -1; // sets the turnOrder spot with playerID to -1 meaning no player
+
+        // next we move the elment at that index down the turnOrder Array, suffling everything else one space forward
+        for (int i = currentTurn; i < turnOrder.Length - 1; i++)
+        {
+            int buffer = turnOrder[i];
+            turnOrder[i] = turnOrder[i + 1];
+            turnOrder[i + 1] = buffer;
+        }
+
+        // start a freash new turn
+        ChangeTurnState(TurnState.TurnStart);
     }
 
     public void NextTurn()

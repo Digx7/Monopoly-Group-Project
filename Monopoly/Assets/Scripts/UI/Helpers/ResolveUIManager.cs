@@ -216,7 +216,17 @@ public class ResolveUIManager : MonoBehaviour
 
     public void OnDeclareBankrupt()
     {
-        Debug.Log("Player " + turnManager.CurrentPlayerIndex() + " is BANKRUPT!");
+        GameObject uiObject = Instantiate(messageScreenPrefab, transform.parent);
+        MessageScreen messageScreen = uiObject.GetComponent<MessageScreen>();
+
+        string message = "Player " + turnManager.CurrentPlayerNumber() + " Is Bankrupt!\nThey are out of the game";
+        messageScreen.Setup(message);
+        messageScreen.OnContinue.AddListener(OnBankrupt);
+    }
+
+    private void OnBankrupt()
+    {
+        playerManager.BankruptPlayer(turnManager.CurrentPlayerIndex());
     }
 
     private void ResolveSpecial(Special special)

@@ -19,9 +19,14 @@ public class GameManager : MonoBehaviour
     public UnityEvent OnGameFinishedBegin;
     public UnityEvent OnGameFinishedEnd;
 
+    public Stack winnerStack;
+
+    private PlayerManager playerManager;
+
     public void Awake()
     {
-        // Initialize
+        winnerStack = new Stack();
+        playerManager = FindObjectOfType<PlayerManager>();
     }
 
     public void Start()
@@ -71,5 +76,12 @@ public class GameManager : MonoBehaviour
             default:
                 break;
         }
+    }
+
+    public void OnPlayerLose(int playerID)
+    {
+        winnerStack.Push(playerID);
+
+        if(winnerStack.Count == (playerManager.players.Count - 1) ) ChangeGameState(GameState.GameFinished); 
     }
 }

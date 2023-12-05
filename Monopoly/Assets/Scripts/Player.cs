@@ -8,6 +8,7 @@ public class Player
     public string name;
 
     public int avatar;
+    public bool isBankrupt = false;
     
     // public Dictionary<string, List<Property>> propertyDict;
     public List<PropertyColorSet> ownedPropertySets;

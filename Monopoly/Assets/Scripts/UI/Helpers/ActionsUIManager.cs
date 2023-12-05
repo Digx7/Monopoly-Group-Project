@@ -10,11 +10,14 @@ public class ActionsUIManager : MonoBehaviour
     public TextMeshProUGUI currentTurn;
     public GameObject rollButton;
     public GameObject continueButton;
+    public GameObject messageScreenPrefab;
 
+    private PlayerManager playerManager;
     private TurnManager turnManager;
 
     private void Awake()
     {
+        playerManager = FindObjectOfType<PlayerManager>();
         turnManager = FindObjectOfType<TurnManager>();
     }
 
@@ -32,6 +35,21 @@ public class ActionsUIManager : MonoBehaviour
             rollButton.SetActive(false);
             continueButton.SetActive(true);
         }
+    }
+
+    public void OnGiveUpClick()
+    {
+        GameObject uiObject = Instantiate(messageScreenPrefab, transform.parent);
+        MessageScreen messageScreen = uiObject.GetComponent<MessageScreen>();
+
+        string message = "Player " + turnManager.CurrentPlayerNumber() + " Gave Up!\nThey are out of the game";
+        messageScreen.Setup(message);
+        messageScreen.OnContinue.AddListener(OnGiveUp);
+    }
+
+    private void OnGiveUp()
+    {
+        playerManager.BankruptPlayer(turnManager.CurrentPlayerIndex());
     }
 
     public void OnRollClick()

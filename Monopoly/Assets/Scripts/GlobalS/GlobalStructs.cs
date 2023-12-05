@@ -6,6 +6,8 @@ public class GlobalStructs : MonoBehaviour
 {
 }
 
+
+
 [System.Serializable]
 public struct Card
 {
